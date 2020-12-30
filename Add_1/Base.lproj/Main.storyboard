@@ -12,10 +12,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Add_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="Add_1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Qs-5W-cY5"/>
                         <viewControllerLayoutGuide type="bottom" id="KmZ-hZ-yGW"/>
@@ -85,6 +85,9 @@
                                 <color key="textColor" red="0.41176470588235292" green="0.6588235294117647" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="inputFieldDidChange" destination="BYZ-38-t0r" eventType="editingChanged" id="92L-TU-Tmk"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -111,6 +114,12 @@
                             <constraint firstItem="VfN-jc-luq" firstAttribute="centerX" secondItem="JnM-FA-ISw" secondAttribute="centerX" id="y0l-4l-mQ3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inputField" destination="bc9-pL-XKB" id="7As-yh-yLz"/>
+                        <outlet property="numberLabel" destination="VfN-jc-luq" id="1Pz-5D-kQO"/>
+                        <outlet property="scoreLabel" destination="lFQ-Lm-WyJ" id="udI-7n-8LN"/>
+                        <outlet property="timeLabel" destination="nvF-Ds-Nj5" id="yCw-Xs-Pv3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
